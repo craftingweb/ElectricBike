@@ -1,0 +1,69 @@
+<!-- 
+1. The first thing we do we create tag header with class header: header.header for navigation
+
+2. It is good rule to give a class/name to most tags, it make easy to work with them later, like apply property to them.
+
+3. It is not a good practise to create .container for whole document. Better way to create same size container for different features in a page. Optimum widht 1200px. 
+<header class="header">
+        <div class="container">
+
+4. Creating logo and menu. You might think to put inside .container element but not, because you only use it for creating size of that container width 1200. 
+In this case you create one more div.header__iner
+  <header class="header">
+        <div class="container">
+            <div class="header__iner">
+                and put inside logo and menu
+
+5. header__iner He use double underscore as bem method, there are many other methods. - or _ but he use __
+
+6. Logo is always link, so we put image teg between a tag.
+
+7. for navigation use tag <nav> and use list method
+
+8. class put right after opening tag: <img class="logo__img" src="images/logo.jpg" alt="logo">
+
+9. 
+
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaomi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__iner">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo.jpg" alt="logo">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Описание</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Характеристики</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">стоимость</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>
