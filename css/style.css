@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.item {
+    width: 33.3%;
+    float: left;
+    height: 50px;
+    background-color: aqua;
+    border: 2px solid orangered;
+}
