@@ -14,7 +14,7 @@ In this case you create one more div.header__iner
             <div class="header__iner">
                 and put inside logo and menu
 
-5. header__iner He use double underscore as bem method, there are many other methods. - or _ but he use __
+5. header__iner He use double underscore as bem method, there are many other methods. - or _ but he use __ : block is header and inside of it there is element header__iner and if he wants to modiffy origginal he us -- so it is header--popular
 
 6. Logo is always link, so we put image teg between a tag.
 
@@ -22,12 +22,48 @@ In this case you create one more div.header__iner
 
 8. class put right after opening tag: <img class="logo__img" src="images/logo.jpg" alt="logo">
 
-9. w33.3% h50 bgc
+9. Shortcuts:  w33.3%  h50  bgc  div#od  p0-10  mr70
 
 10. !!! * {
     box-sizing: border-box; or content-box;
     If border-box it is fix size and affect inword and if content-box the size is increasing outword
 }
+
+11. locate block in the middle use margin: 0 auto; where 0 - top & bottom and auto - will lead to repel from left & right to the middle as much as possible
+
+12. !! width: 1200px it is not good practise to use static (constant) width, because it is not just being used on big displays, but also work on mobile devises as well. So instead we use max-width: 1200px, so when there is big screen it will use 1200, otherwise it will use whatever it can.
+
+13. The most left edge of display in mobile devices too close to edge of phone so we need to make room from left side till text, it achives by using padding: 0 10px; 10px is optimum value for space. Also if there is set width 1200 then we have to increase by 20 because of padding
+
+14. !!!! Every tag in html by default assign curtain padding and marging. It has done back in the day. So to solve this problem (but it does not completely set everything to 0, some still have p and m) need to download normalize css and !! important to insert before style.css otherwise it will override your style if you put normalize below
+
+15 display: flex; locate blocks in a row
+
+16 justify-content: space-betwen; will locate 2 blocks on the ends
+
+17 Figma to see distance we select edge and than press and hold key Opt
+
+18. ul has padding on the left where markers are so we put pl0, as well margin to 0; together with * we put them at the begining like standart.
+
+19. list-style: none; to remove bullets from unordered list
+
+20. If logo and text in different levels (vertically) to center them, inside the flexible container align-items: center 
+She said that justify-content positions elements across the horizontal axis because the word itself is longer than align-items.
+
+21. Color for anchor or text good practice to use color: inherit; If we want all navigation the same color, we assign value for main div and the rest is just inherit. 
+Inheritance apply from the nearest div.
+
+22. From lower case to upper case - we use text-transform: uppercase;
+
+23. In body we set text size, font ... and downloading them from google fonts, adding bold if needed, see in figma all possible text weight. 
+Put that font in body, not just in link.
+Font-size, color, line-height
+
+24. !! selector1 + selector2 {}, here + means 2nd selector. How does it work. It search for selector1, then it looks for 2nd selector and it only apply properties to 2nd selector. It very handy when we do not want to apply property to all elements but only for specific elements. It only works in such combination as above.
+
+
+
+
 
 -->
 
@@ -40,13 +76,17 @@ In this case you create one more div.header__iner
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xiaomi</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__iner">
+            <div class="header__inner">
                 <a class="logo" href="#">
                     <img class="logo__img" src="images/logo.jpg" alt="logo">
                 </a>
