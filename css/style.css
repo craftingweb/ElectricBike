@@ -51,7 +51,7 @@ ul {
 
 .menu__link {
     text-transform: uppercase;
-    padding: 0 20px;
+    padding: 42px 20px;
 }
 
 .menu__link:hover{
@@ -62,3 +62,4 @@ ul {
 .menu__item + .menu__item{
 padding-left: 10px;
 }
+
