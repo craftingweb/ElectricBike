@@ -57,6 +57,7 @@ ul {
 .menu__link:hover{
     color: white;
     background-color: rgb(12, 12, 12);
+    transition: .5s;
 }
 
 .menu__item + .menu__item{
