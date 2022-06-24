@@ -18,8 +18,8 @@ a {
 }
 
 ul {
-    border: 1px solid skyblue;
     background-color: slateblue;
+    border: 1px solid skyblue;
     list-style: none;
     margin: 0;
     padding-left: 0;
