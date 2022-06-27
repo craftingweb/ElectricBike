@@ -67,3 +67,13 @@ padding-left: 10px;
 .bike {
     padding: 100px 0 150px;
 }
+
+.bike__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bike__column-slider {
+    flex-basis: 630px;
+}
+

@@ -73,6 +73,10 @@ Font-size, color, line-height
 
 30. When we create general empty div/section in which will be located relative elements to this div. So for this one we assign padding to div above and down: 100px 0 150px;
 
+31. When use Flex need use flex-basis instead of width. It is almost synonym, only means along main axe. But it also fine to use width
+
+32. when 2 classes are the same to apply different property to each one use :nth-child(1) then 2 but need to wrap them in extra div
+
 -->
 
 
@@ -128,7 +132,7 @@ Font-size, color, line-height
                     </p>
                     <a class="bike__link" href="#">ЗАКАЗАТЬ</a>
                 </div>
-                <div class="bike__column">
+                <div class="bike__column bike__column-slider">
                     <div class="bike-slider">
                         <img class="bike-slider__item" src="images/bike-1.jpg" alt="">
                         <img class="bike-slider__item" src="images/bike-2.jpg" alt="">
@@ -163,6 +167,7 @@ Font-size, color, line-height
     <div class="item"></div>
     <div class="item"></div>
 </div>
+
 
 
 </body>
