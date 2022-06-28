@@ -75,5 +75,14 @@ padding-left: 10px;
 
 .bike__column-slider {
     flex-basis: 630px;
+    margin-left: 30px;
 }
 
+.bike__title {
+ 
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+
+
+}
