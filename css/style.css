@@ -79,10 +79,21 @@ padding-left: 10px;
 }
 
 .bike__title {
- 
     font-size: 64px;
     font-weight: 700;
     line-height: 77px;
+    margin: 72px 0 5px;
+}
 
+.bike__subtitle {
+    margin: 0 0 60px;
+    font-size: 32px;
+    line-height: 39px;
+    color: #6F6F6F;
+}
+
+.bike__text{
+    max-width: 420px;
+    
 
 }
