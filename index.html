@@ -85,10 +85,14 @@ Font-size, color, line-height
 
 36. To create space between leters using: letter-spacing: (1.1)em;
 
+37. Slick slider, google jquery cdn 
+
+38. <script> locate them before closing <body> because scripts are more resoursable, that is why need more time to load them. That is why for us more important to load content and only then script. Otherwise if we put them on top, once it load it will take few seconds and only then load content. Nobody will wait that long and go out from site.
+
 -->
 
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -113,13 +117,13 @@ Font-size, color, line-height
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="" class="menu__link">Описание</a>
+                <a href="" class="menu__link">Description</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link">Характеристики</a>
+                <a href="" class="menu__link">Stats</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link">стоимость</a>
+                <a href="" class="menu__link">Price</a>
               </li>
             </ul>
           </nav>
@@ -131,21 +135,21 @@ Font-size, color, line-height
         <div class="bike__inner">
           <div class="bike__column">
             <h1 class="bike__title">Xiaomi Himo C26</h1>
-            <h3 class="bike__subtitle">Электрический велосипед</h3>
+            <h3 class="bike__subtitle">Electric Bike</h3>
             <p class="bike__text">
-              Полная свобода передвижения и надежный транспорт для путешествий
-              на любые расстояния
+              Complete freedom of movement and reliable travel transport for any
+              distance
             </p>
             <p class="bike__text">
-              HIMO C26 – это новый электровелосипед от Xiaomi, который создан
-              как для езды по городу, так и бездорожью. Он имеет мощный
-              двигатель и емкий аккумулятор, благодаря которым способен
-              проезжать на одном заряде до 100 км, что определенно выше, чем у
-              большинства конкурентов. А большие колеса с пневматическими
-              шинами, дисковые тормоза, 7-скоростная трансмиссия и эргономичное
-              сидение делают каждую поездку гораздо приятнее.
+              HIMO C26 - This is a new electric bike from Xiaomi, which is
+              created both for city driving and off-road driving. He has a
+              powerful engine and a capacious battery, thanks to which it is
+              capable of travel on a single charge up to 100 km, which is
+              definitely higher than most competitors. And big wheels with
+              pneumatic tires, disc brakes, 7-speed transmission and ergonomic
+              seat make every trip much more enjoyable.
             </p>
-            <a class="bike__link" href="#">ЗАКАЗАТЬ</a>
+            <a class="bike__link" href="#">Order</a>
           </div>
           <div class="bike__column bike__column-slider">
             <div class="bike-slider">
@@ -156,25 +160,26 @@ Font-size, color, line-height
             </div>
             <ul class="bike__list">
               <li class="bike__list-item">
-                до 100 км
-                <span>Запас хода</span>
+                up to 100 miles
+                <span>Power reserve</span>
               </li>
               <li class="bike__list-item">
-                25 км/ч
-                <span>Макс корость</span>
+                25 mph
+                <span>Max speed</span>
               </li>
               <li class="bike__list-item">
-                3 режима езды
-                <span>механический, гибридный, электрический</span>
+                3 modes
+                <span>mechanical, hybrid, electric</span>
               </li>
               <li class="bike__list-item">
-                25 кг
-                <span>вес</span>
+                50 lb
+                <span>weight</span>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </body>
 </html>
