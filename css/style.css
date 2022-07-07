@@ -83,7 +83,9 @@ ul {
   margin: 0 0 60px;
   font-size: 32px;
   line-height: 39px;
-  color: #6f6f6f;
+  color: #878686;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .bike__text {
@@ -99,4 +101,8 @@ ul {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 1.1em;
+}
+
+.letterSpace {
+  letter-spacing: 0.5rem;
 }
