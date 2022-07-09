@@ -14,7 +14,7 @@ In this case you create one more div.header__iner
             <div class="header__iner">
                 and put inside logo and menu
 
-5. header__iner He use double underscore as bem method, there are many other methods. - or _ but he use __ : block is header and inside of it there is element header__iner and if he wants to modiffy origginal he us -- so it is header--popular
+5. header__iner  use double underscore as bem method, there are many other methods. - or _ but use __ : block is header and inside of it there is element header__iner and if wants to modiffy origginal use -- so it is header--popular
 
 6. Logo is always link, so we put image teg between a tag.
 
@@ -91,6 +91,16 @@ Font-size, color, line-height
 
 39. Then we need to create and attach file like folder js with file main.js and connect it below JQ script
 
+40. Structure of slider located in tab 'usage'. It need to be one parent div and childs div aka our images. In our example there are: bike-slider and bike-slider__item. 
+Second we need to link slick.css but first we need to download it from slick website and copy slick.css to our styles folder.
+Third same thing with slick.min.js 
+Forth link css and js in html
+! Our own styles.css need to be last from css links
+! Same thing with connecting js; JQ first, then slick.min.js
+Fifth. In main.js $(function () {$(".bike-slider").slick({});});
+Six. There is some issues we have to add: max-width: 630px in .bike__column-slider
+Seventh. We can also add theme from slick to chose how it gonna look.
+Eights: In slick - settings we can customize: git rid of arrows or add dots.$(function () {$(".bike-slider").slick({arrows: false,dots: true,});});
 
 
 -->
@@ -102,13 +112,14 @@ Font-size, color, line-height
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xiaomi</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -185,6 +196,7 @@ Font-size, color, line-height
       </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
