@@ -108,3 +108,62 @@ ul {
 .letterSpace {
   letter-spacing: 0.5rem;
 }
+
+.bike-slider .slick-dots {
+  top: 50px;
+  right: 0;
+}
+
+.slick-dots {
+  position: absolute;
+}
+
+.slick-dots li + li {
+  padding-top: 10px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  padding: 0;
+  border: none;
+  background-color: #131313;
+  height: 25px;
+  width: 2px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.slick-dots button:hover,
+.slick-active button {
+  background-color: red;
+}
+
+.bike__list {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bike__list-item {
+  font-family: "Inter";
+  font-style: normal;
+
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  flex-basis: 160px;
+  text-align: center;
+}
+
+.bike__list-item span {
+  display: block;
+  margin-top: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: lowercase;
+}
