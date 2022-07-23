@@ -1,13 +1,13 @@
 <!-- 
-1. The first thing we do we create tag header with class header: header.header for navigation
+1. The first thing we do we create tag header with class header: header.header for navigation (under header means top thing aka navigation)
 
 2. It is good rule to give a class/name to most tags, it make easy to work with them later, like apply property to them.
 
-3. It is not a good practise to create .container for whole document. Better way to create same size container for different features in a page. Optimum widht 1200px. 
+3. It is not a good practise to create .container for whole document. Better way to create same size container for different features in a page. Optimum widht 1200px. This size is good for human eye. 
 <header class="header">
         <div class="container">
 
-4. Creating logo and menu. You might think to put inside .container element but not, because you only use it for creating size of that container width 1200. 
+4. Creating logo and menu. You might think to put inside empty .container element but not, because you only use it for creating size of that container width 1200. 
 In this case you create one more div.header__iner
   <header class="header">
         <div class="container">
@@ -16,17 +16,18 @@ In this case you create one more div.header__iner
 
 5. header__iner  use double underscore as bem method, there are many other methods. - or _ but use __ : block is header and inside of it there is element header__iner and if wants to modiffy origginal use -- so it is header--popular
 
-6. Logo is always link, so we put image teg between a tag.
+-6. Logo is always link, so we put image teg between a tag.
 
-7. for navigation use tag <nav> and use list method
+-7. for navigation around website use tag <nav> with class menu. it convention (from back in the day) to do as list ul li and inside anchors 
 
-8. class put right after opening tag: <img class="logo__img" src="images/logo.jpg" alt="logo">
+-8. class put right after opening tag: <img class="logo__img" src="images/logo.jpg" alt="logo">
 
 9. Shortcuts:  w33.3%  h50  bgc  div#od  p0-10  mr70  m0-0-60
 
-10. !!! * {
+10. !!! * {           the first line in css file
     box-sizing: border-box; or content-box;
     If border-box it is fix size and affect inword and if content-box the size is increasing outword
+    standart set to content-box but for markup is better to set border-box
 }
 
 11. locate block in the middle use margin: 0 auto; where 0 - top & bottom and auto - will lead to repel from left & right to the middle as much as possible
