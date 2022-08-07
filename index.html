@@ -61,6 +61,9 @@ Put that font in body, not just in link.
 Font-size, color, line-height
 
 24. !! selector1 + selector2 {}, here + means 2nd selector. .menu__item + .menu__item How does it work. It search for selector1, then it looks for 2nd selector and it only apply properties to 2nd selector. It very handy when we do not want to apply property to all elements but only for specific elements. 1 element -50- 2 element -50- 3 element -20-     We originaly apply them 20 it creates 40 then we need 10 so we use this combination
+
+Applying padding-top: 50px; for all but first .info__item + .info__item
+
 ! Margin and Padding is same thing you only see difference when there is backround color, otherwise it is white. Use margin: auto to center it.
 
 25. !! With help of padding to anchor as well as assigning color to :hover it is create rectangular shape of hover effect. And we  can change size of rectangular with padding.
@@ -108,6 +111,9 @@ Nines: Custumes dots, right click on them .slick-dots
 
 position: absolute; allows to put it anywhere with properties top, right, bottom, left
 
+41. To copy image from Figma: click on image -> Design -> Export -> select jpg
+
+42. Applying padding-top: 50px; for all but first .info__item + .info__item
 
 -->
 
@@ -197,6 +203,84 @@ position: absolute; allows to put it anywhere with properties top, right, bottom
                 <span>weight</span>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container">
+        <!-- for width-->
+        <div class="info__inner">
+          <!--2 parts: img & text-->
+          <img class="info__img" src="images/info-img.jpg" alt="" />
+          <div class="info__list">
+            <div class="info__item">
+              <h4 class="info__item-title">Comfort and safety from HIMO</h4>
+              <p class="info__item-text">
+                The HIMO C26 electric bike will allow you to quickly and
+                comfortably get to your place of work or study and not be tied
+                to public transport. The bike has a solid construction and an
+                impressive range to become a reliable vehicle in modern urban
+                environments. A light and durable frame, 26-inch wheels and a
+                7-speed transmission system allow you to confidently move not
+                only on an asphalt roadway, but also on a difficult country
+                track.
+              </p>
+            </div>
+            <div class="info__item">
+              <h4 class="info__item-title">Strong and lightweight frame</h4>
+              <p class="info__item-text">
+                The HIMO C26 frame is made of durable and lightweight aluminum
+                alloy and features high reliability, stability in emergency
+                situations, excellent handling and comfortable movement on any
+                road.
+              </p>
+            </div>
+            <div class="info__item">
+              <h4 class="info__item-title">
+                Combination of modes for extended range
+              </h4>
+              <p class="info__item-text">
+                The HIMO C26 electric bike has an extended range. Its 10,000 mAh
+                battery with intelligent energy optimization system allows you
+                to travel up to 60 km on a single charge in electric drive mode.
+                When using physical force on some sections of the path, the
+                cruising range increases to 100 km. The maximum travel speed of
+                HIMO C26 is 25 km/h.
+              </p>
+            </div>
+            <div class="info__item">
+              <h4 class="info__item-title">Reliable transmission</h4>
+              <p class="info__item-text">
+                The 7-speed transmission system provides smooth and precise
+                shifting, comfortable speed control and reliable operation. By
+                shifting gears, you can drive up the hill with minimal effort
+                and slide down safely.
+              </p>
+            </div>
+            <div class="info__item">
+              <h4 class="info__item-title">
+                All information on the LCD display
+              </h4>
+              <p class="info__item-text">
+                All information on the LCD display A large informative display
+                placed on the steering column displays all the important
+                information about the operation of the HIMO C26 in real time.
+                You can find out the current speed of movement, the charge level
+                or the distance traveled. The display is protected from external
+                factors according to the IPX7 standard and is not afraid of rain
+                and dust.
+              </p>
+            </div>
+            <div class="info__item">
+              <h4 class="info__item-title">Comfortable saddle</h4>
+              <p class="info__item-text">
+                The HIMO C26 electric bike is equipped with a bicycle saddle
+                from the well-known brand Selle Royal. The three-dimensional gel
+                structure of the saddle ensures optimal resilience and high
+                riding comfort.
+              </p>
+            </div>
           </div>
         </div>
       </div>
