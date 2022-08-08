@@ -193,6 +193,7 @@ ul {
   line-height: 19px;
   text-transform: uppercase;
   margin: 0 0 10px;
+  font-family: "Inter";
 }
 
 .info__item-text {
