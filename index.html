@@ -132,6 +132,17 @@ When we create empty div and inside of this empty div we will put other tags. Th
 49. in radio; property checked means by default that radio button will be selected once page loaded originaly. 
 
 50. if we use property position: absolute; it will be relate to entire screen, but if this div located inside other div and we apply position: relative to parent div, then child div with property  position: absolute will be position based on size of parent, with the help of left, right
+
+51. For footer or header to apply background-color from edge of the screen to another edge just use parent class, like .footer{} but if only 1200 widht then apply not for container but .footer__inner{background-color:}
+
+52. When align-items: center; we need to specify in that class height, otherwise height will be size of icon, logo...
+
+53. .footer__social-link + .footer__social-link {margin-left: 26px;} if you put padding-left: 26px; then area left of icon up to next icon will be clickable and lead to right icon. 
+
+54. footer: on left Privacy in central social and on right phone & email, we already apply to parent display:flex, so now they on one raw but we need to put phone & email in separate lines we apply to them display: block
+Now they will be below one after another, so we appling : .footer__contacts-link + .footer__contacts-link {margin-top: 10px;}
+
+
 -->
 
 <!DOCTYPE html>
