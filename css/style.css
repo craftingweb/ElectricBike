@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Charis SIL", serif;
   font-family: "Open Sans", sans-serif;
@@ -63,7 +67,7 @@ ul {
 }
 
 .bike {
-  padding: 100px 0 150px;
+  padding: 100px 0 0px;
 }
 
 .bike__inner {
@@ -107,6 +111,11 @@ ul {
   line-height: 24px;
   letter-spacing: 1.1em;
   text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.bike__link:hover {
+  background-color: #ff4040;
 }
 
 .letterSpace {
@@ -172,7 +181,8 @@ ul {
   text-transform: lowercase;
 }
 .info {
-  margin-bottom: 150px;
+  padding-top: 150px;
+  margin-bottom: 50px;
 }
 .info__inner {
   display: flex;
@@ -202,9 +212,11 @@ ul {
 
 .info__item-text {
   min-width: 450px;
+  line-height: 21px;
 }
 
 .characteristics {
+  padding-top: 100px;
   margin-bottom: 150px;
 }
 
@@ -399,6 +411,11 @@ h4 {
   font-size: 20px;
   line-height: 24px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form__btn:hover {
+  background-color: #ff4040;
 }
 
 .footer {

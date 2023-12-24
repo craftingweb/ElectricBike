@@ -142,7 +142,8 @@ When we create empty div and inside of this empty div we will put other tags. Th
 54. footer: on left Privacy in central social and on right phone & email, we already apply to parent display:flex, so now they on one raw but we need to put phone & email in separate lines we apply to them display: block
 Now they will be below one after another, so we appling : .footer__contacts-link + .footer__contacts-link {margin-top: 10px;}
 
-
+55. navigation on links; we adding id with the same name as class to section and then in a link #id ;<a href="#price" ;;  <section class="price" id="price">
+html {scroll-behavior: smooth;} to make it more smooth transition.
 -->
 
 <!DOCTYPE html>
@@ -172,13 +173,15 @@ Now they will be below one after another, so we appling : .footer__contacts-link
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="" class="menu__link letterSpace">Description</a>
+                <a href="#info" class="menu__link letterSpace">Description</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link letterSpace">Stats</a>
+                <a href="#characteristics" class="menu__link letterSpace"
+                  >Stats</a
+                >
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link letterSpace">Price</a>
+                <a href="#price" class="menu__link letterSpace">Price</a>
               </li>
             </ul>
           </nav>
@@ -193,8 +196,9 @@ Now they will be below one after another, so we appling : .footer__contacts-link
             <h3 class="bike__subtitle">Electric Bike</h3>
             <p class="bike__text">
               Complete freedom of movement and reliable travel transport for any
-              distance
+              distance.
             </p>
+            <br />
             <p class="bike__text">
               HIMO C26 - This is a new electric bike from Xiaomi, which is
               created both for city driving and off-road driving. He has a
@@ -204,7 +208,7 @@ Now they will be below one after another, so we appling : .footer__contacts-link
               pneumatic tires, disc brakes, 7-speed transmission and ergonomic
               seat make every trip much more enjoyable.
             </p>
-            <a class="bike__link" href="#">Order</a>
+            <a class="bike__link" href="#price">Order</a>
           </div>
           <div class="bike__column bike__column-slider">
             <div class="bike-slider">
@@ -235,7 +239,7 @@ Now they will be below one after another, so we appling : .footer__contacts-link
         </div>
       </div>
     </section>
-    <section class="info">
+    <section class="info" id="info">
       <div class="container">
         <!-- for width-->
         <div class="info__inner">
@@ -313,7 +317,7 @@ Now they will be below one after another, so we appling : .footer__contacts-link
         </div>
       </div>
     </section>
-    <section class="characteristics">
+    <section class="characteristics" id="characteristics">
       <div class="container">
         <h4>Characteristics</h4>
         <div class="characteristics__inner">
@@ -445,7 +449,7 @@ Now they will be below one after another, so we appling : .footer__contacts-link
         </div>
       </div>
     </div>
-    <section class="price">
+    <section class="price" id="price">
       <div class="container">
         <div class="price__inner">
           <form class="form">
