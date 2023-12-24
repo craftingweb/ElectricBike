@@ -102,7 +102,7 @@ ul {
   display: inline-block;
   background-color: #131313;
   color: white;
-  padding: 21px 83px;
+  padding: 28px 71px 28px 81px;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 1.1em;
@@ -391,7 +391,7 @@ h4 {
 
 .form__btn {
   background-color: #131313;
-  padding: 28px 81px;
+  padding: 28px 71px 28px 81px;
   letter-spacing: 1.1rem;
   text-transform: uppercase;
   border: none;
