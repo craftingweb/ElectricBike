@@ -311,3 +311,42 @@ h4 {
 .form__input-text {
   margin-bottom: 10px;
 }
+
+.form__label-box {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.form__label + .form__label {
+  margin-left: 23px;
+}
+
+.form__input-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.form__bike {
+  display: none;
+}
+
+.form__radio-style {
+  border-radius: 30px;
+  width: 80px;
+  height: 12px;
+}
+
+.form__radio-style--grey {
+  background: #6f6f6f;
+}
+
+.form__radio-style--white {
+  background: #fff;
+  border: 1px solid #6f6f6f;
+}
+.form__radio-style--red {
+  background: #ff4040;
+}

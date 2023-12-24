@@ -126,6 +126,8 @@ When we create empty div and inside of this empty div we will put other tags. Th
 46. radio input (circle) we can not apply styles to it, so we need to hide it.
 
 47. once we click on input, by default it gives us outline, to remove it use outline: none
+
+48. if we won't add property name to each radio input then user can select multiple radio buttons at once, name='' preventing it.
 -->
 
 <!DOCTYPE html>
@@ -442,7 +444,7 @@ When we create empty div and inside of this empty div we will put other tags. Th
             <p class="form__input-text">Select your color</p>
             <div class="form__label-box">
               <label class="form__label">
-                <input type="radio" class="form__input-radio" />
+                <input type="radio" class="form__input-radio" name="radio" />
                 <div class="form__bike">
                   <img
                     class="form__bike-img"
@@ -454,7 +456,7 @@ When we create empty div and inside of this empty div we will put other tags. Th
                 <div class="form__radio-style form__radio-style--grey"></div>
               </label>
               <label class="form__label">
-                <input type="radio" class="form__input-radio" />
+                <input type="radio" class="form__input-radio" name="radio" />
                 <div class="form__bike">
                   <img
                     class="form__bike-img"
@@ -466,7 +468,7 @@ When we create empty div and inside of this empty div we will put other tags. Th
                 <div class="form__radio-style form__radio-style--white"></div>
               </label>
               <label class="form__label">
-                <input type="radio" class="form__input-radio" />
+                <input type="radio" class="form__input-radio" name="radio" />
                 <div class="form__bike">
                   <img
                     class="form__bike-img"
