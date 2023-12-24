@@ -128,6 +128,8 @@ When we create empty div and inside of this empty div we will put other tags. Th
 47. once we click on input, by default it gives us outline, to remove it use outline: none
 
 48. if we won't add property name to each radio input then user can select multiple radio buttons at once, name='' preventing it.
+
+49. in radio; property checked means by default that radio button will be selected once page loaded originaly. 
 -->
 
 <!DOCTYPE html>
@@ -456,7 +458,12 @@ When we create empty div and inside of this empty div we will put other tags. Th
                 <div class="form__radio-style form__radio-style--grey"></div>
               </label>
               <label class="form__label">
-                <input type="radio" class="form__input-radio" name="radio" />
+                <input
+                  type="radio"
+                  class="form__input-radio"
+                  name="radio"
+                  checked
+                />
                 <div class="form__bike">
                   <img
                     class="form__bike-img"

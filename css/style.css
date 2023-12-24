@@ -321,12 +321,16 @@ h4 {
   margin-left: 23px;
 }
 
-.form__input-radio {
+/* .form__input-radio {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+} */
+
+.form__input-radio:checked + .form__bike {
+  display: block;
 }
 
 .form__bike {
@@ -349,4 +353,16 @@ h4 {
 }
 .form__radio-style--red {
   background: #ff4040;
+}
+
+.form__btn {
+  background-color: #131313;
+  padding: 28px 81px;
+  letter-spacing: 1.1rem;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
 }
