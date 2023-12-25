@@ -627,6 +627,20 @@ h4 {
   .form__bike {
     bottom: 80px;
   }
+  .footer__inner {
+    display: block;
+    padding: 15px 0;
+    height: auto;
+    text-align: center;
+  }
+  .footer__social {
+    padding: 15px 0;
+  }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 460px) {
